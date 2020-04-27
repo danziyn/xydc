@@ -8,8 +8,8 @@ app.use(require("cors")());
 
 app.use(express.json());
 
-app.use("/admin", express.static(__dirname + "./public/admin"));
-app.use("/", express.static(__dirname + "./public/web"));
+app.use("/admin", express.static(__dirname + "/public/admin"));
+app.use("/", express.static(__dirname + "/public/web"));
 
 require("./router/admin")(app);
 
